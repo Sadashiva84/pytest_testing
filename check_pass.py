@@ -19,16 +19,18 @@ def check():
     dataset = pd.read_csv('sqrt.csv')
     for i in range(len(dataset)):
         if(dataset.loc[i][6] == 'failed'):
-            found = True
-    return found
+            break
+        else:
+            execute()
 
+check()
 
-if found != 'False': 
-        print("Passed")
-        execute()
-else:
-        print("Failed")
-        
+# if found == 'False': 
+#     print("Passed")
+#     execute()
+# else:
+#     print("Failed")
+
 
 
 
