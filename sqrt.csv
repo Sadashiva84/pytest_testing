@@ -1,3 +1,4 @@
 id,module,name,file,doc,markers,status,message,duration
-test_sqrt.py::test_square_positive,test_sqrt,test_square_positive,test_sqrt.py,,,passed,,0.00018304900731891394
-test_sqrt.py::test_square_decimal,test_sqrt,test_square_decimal,test_sqrt.py,,,failed,assert 5.48 == 5.47,0.00025971200375352055
+test_sqrt.py::test_square_positive,test_sqrt,test_square_positive,test_sqrt.py,,,passed,,0.00013193099584896117
+test_sqrt.py::test_square_decimal,test_sqrt,test_square_decimal,test_sqrt.py,,,passed,,0.00013882899656891823
+test_sqrt.py::test_square_zero,test_sqrt,test_square_zero,test_sqrt.py,,,passed,,0.00011150300269946456
