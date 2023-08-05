@@ -1,5 +1,6 @@
 import csv
 import os
+import pandas as pd
 
 
 def execute():
@@ -12,13 +13,22 @@ def execute():
     print("Pushed code to deployment branch")
 
 word = 'passed'
-with open ("sqrt.csv", mode = 'r') as file:
-    pass_check = csv.reader(file)
-    for i in pass_check: 
-        if word == 'passed':
-            print("Executing")
-            execute()
-            break
+
+found = False
+def check():
+    dataset = pd.read_csv('sqrt.csv')
+    for i in range(len(dataset)):
+        if(dataset.loc[i][6] == 'failed'):
+            found = True
+    return found
+
+
+if found != 'False': 
+        print("Passed")
+        execute()
+else:
+        print("Failed")
+        
 
 
 
