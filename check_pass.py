@@ -17,6 +17,7 @@ with open ("sqrt.csv", mode = 'r') as file:
         if i != 'failed':
             print("Executing")
             execute()
+            break
 
 
 
