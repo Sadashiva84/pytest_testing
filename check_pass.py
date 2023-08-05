@@ -11,10 +11,11 @@ def execute():
     os.system('git push origin testing:deployment')
     print("Pushed code to deployment branch")
 
+word = 'passed'
 with open ("sqrt.csv", mode = 'r') as file:
     pass_check = csv.reader(file)
     for i in pass_check: 
-        if i != 'failed':
+        if word == 'passed':
             print("Executing")
             execute()
             break
